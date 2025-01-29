@@ -1,8 +1,14 @@
-<<<<<<< HEAD
 # xcentium-myflix
-=======
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Installing Steps
+```bash
+npm install
+
+node v18.20.6
+npm  v10.8.2
+```
 ## Getting Started
 
 First, run the development server:
