@@ -41,8 +41,6 @@ const Page = () => {
 
   return (
     <div className="w-full relative font-[Bebas Neue] text-white">
-      <title>Myflix Homepage</title>
-
       {/* Hero Section */}
       <div className="relative w-full h-[540px] max-[600px]:h-[500px] border-b-4 border-border-bottom">
         {!!heroMovie && (
@@ -73,12 +71,12 @@ const Page = () => {
                   </h1>
                   <p className="max-[600px]:text-[0.6rem]">{heroMovie.Plot}</p>
                   <div className="flex items-center gap-3">
-                    <Button
-                      label="More Info"
-                      icon={<IoMdInformationCircleOutline />}
-                      href={`/movie/${heroMovie.imdbID}`}
-                      variant="secondary"
-                    />
+                      <Button
+                        label="More Info"
+                        icon={<IoMdInformationCircleOutline />}
+                        href={`/movie/${heroMovie.imdbID}`}
+                        variant="secondary"
+                      />
                   </div>
                 </div>
               </div>
@@ -87,14 +85,14 @@ const Page = () => {
         )}
       </div>
       {/* Movie Grid Section */}
-      <main className="relative bg-gradient-to-b from-gray-900/10 to-[#010511]">
+      <main className="relative bg-gradient-to-b from-gray-900/10 to-[#010511] myflix-center ">
         <section className="container pb-32">
           <Row title="Top Rated" movies={movies} />
         </section>
-      </main>
+      </main> 
       <footer className="text-center bg-gray-800 text-white py-4 text-sm">
-        Copyright © 2025
-      </footer>
+  Copyright © 2025
+</footer>
     </div>
   );
 };

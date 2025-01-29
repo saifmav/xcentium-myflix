@@ -58,3 +58,7 @@ body{
 .btn-secondary:hover {
   background-color: #3a3a3a;
 }
+.myflix-center {
+  display: flex;
+  justify-content: center;
+}
