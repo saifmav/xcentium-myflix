@@ -1,21 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body{
+    background-color: black;
+}
+
+
+/* @layer utilities{
+    .btn{
+        @apply px-4 py-[0.3rem] bg-primary rounded-sm
+    }
+} */
+
+.hideScrollbar::-webkit-scrollbar {
+    display: none;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Global Button Styles */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600; /* font-semibold */
+  border-radius: 9999px; /* rounded-full */
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none; /* Remove default link underline */
+  justify-content: center;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn-primary {
+  background-color: #ff0000; /* Replace with your primary color */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.btn-secondary {
+  background-color: #4a4a4a; /* Gray */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #3a3a3a;
 }
